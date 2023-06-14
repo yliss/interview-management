@@ -1,6 +1,7 @@
-package com.consulting.hr.persons.domain;
+package com.consulting.hr.domain.persons;
 
 import java.util.List;
+
 
 public class Person {
 

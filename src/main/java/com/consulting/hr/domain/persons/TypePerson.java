@@ -1,4 +1,4 @@
-package com.consulting.hr.persons.domain;
+package com.consulting.hr.domain.persons;
 
 public enum TypePerson {
     RECRUITER, TECHNICAL_ADVISOR, APPLICANT

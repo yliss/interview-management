@@ -1,4 +1,6 @@
-package com.consulting.hr.persons.domain;
+package com.consulting.hr.domain.recruitment;
+
+import com.consulting.hr.domain.persons.Person;
 
 import java.util.Date;
 

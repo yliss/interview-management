@@ -1,7 +1,8 @@
-package com.consulting.hr.persons.domain;
+package com.consulting.hr.domain.recruitment;
+
+import com.consulting.hr.domain.persons.Skill;
 
 public class JobPosition {
-
 
     private String name;
     private String businessLine;

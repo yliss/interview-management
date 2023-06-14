@@ -1,4 +1,6 @@
-package com.consulting.hr.persons.domain;
+package com.consulting.hr.domain.persons;
+
+import com.consulting.hr.domain.recruitment.JobPosition;
 
 public class Skill {
     private JobPosition jobPosition;
