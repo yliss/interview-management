@@ -1,6 +1,6 @@
-package com.consulting.hr.infraestructure.persistence;
+package com.consulting.interviews.infraestructure.persistence;
 
-import com.consulting.hr.business.SkillsData;
+import com.consulting.interviews.business.SkillsData;
 import org.springframework.stereotype.Repository;
 
 @Repository

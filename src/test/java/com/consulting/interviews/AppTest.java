@@ -1,4 +1,4 @@
-package com.consulting.hr;
+package com.consulting.interviews;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

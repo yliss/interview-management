@@ -1,4 +1,4 @@
-package com.consulting.hr.business;
+package com.consulting.interviews.business;
 
 public interface SkillsData {
     Object findAll();
