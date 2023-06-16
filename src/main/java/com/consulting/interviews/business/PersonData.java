@@ -1,5 +1,5 @@
 package com.consulting.interviews.business;
 
-public interface SkillsData {
+public interface PersonData {
     Object findAll();
 }

@@ -1,6 +1,8 @@
 package com.consulting.interviews.infraestructure.controllers;
 
+import com.consulting.interviews.business.PersonService;
 import com.consulting.interviews.domain.persons.Person;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -8,6 +10,12 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(path = "/person")
 public class PersonController {
+    private PersonService personService;
+    @Autowired
+    public PersonController(PersonService personService){
+        this.personService = personService;
+    }
+
     @RequestMapping("/ping")
     public String healthCheck() {
         return "Pong!";
@@ -15,7 +23,7 @@ public class PersonController {
     //CREATE
     @PostMapping
     public ResponseEntity<Person> createPerson(Person person) {
-
+        personService.createPerson(person);
         return ResponseEntity.status(HttpStatus.OK).body(person);
     }
     //READ
@@ -36,4 +44,9 @@ public class PersonController {
     //DELETE
 
 
+    public ResponseEntity<Message> deletePerson(Person person) {
+        Message message = new Message("");
+
+        return ResponseEntity.status(HttpStatus.OK).body(message);
+    }
 }
