@@ -1,0 +1,9 @@
+version: '2.2'
+services:
+  db2:
+    image: postgres:latest
+    container_name: db2
+    environment:
+      - POSTGRES_PASSWORD=test
+    ports:
+      - "5432:5432"
