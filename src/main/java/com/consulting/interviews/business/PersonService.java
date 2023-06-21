@@ -7,5 +7,6 @@ public interface PersonService {
     void createPerson(Person person);
     Person getPerson (Long id);
     void updatePerson (Person person);
+    void deletePerson(Long id);
 
 }

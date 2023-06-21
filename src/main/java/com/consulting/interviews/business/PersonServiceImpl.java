@@ -18,5 +18,29 @@ public class PersonServiceImpl implements PersonService {
         personData.save(person);
     }
 
-    public void updatePerson
+    /**
+     * @param id
+     * @return
+     */
+    @Override
+    public Person getPerson(Long id) {
+        return null;
+    }
+
+    /**
+     * @param person
+     */
+    @Override
+    public void updatePerson(Person person) {
+
+    }
+
+    /**
+     * @param id
+     */
+    @Override
+    public void deletePerson(Long id) {
+
+    }
+
 }
